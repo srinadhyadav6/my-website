@@ -1,0 +1,126 @@
+/* ============ EXPERIENCE ============ */
+.experience {
+  background: rgba(5, 10, 20, 0.4);
+}
+
+.experience__timeline {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.exp__card {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.exp__marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.exp__dot {
+  width: 14px;
+  height: 14px;
+  background: #63b3ed;
+  border-radius: 50%;
+  border: 3px solid rgba(10, 10, 20, 1);
+  box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.25);
+  flex-shrink: 0;
+}
+
+.exp__line {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(to bottom, rgba(99, 179, 237, 0.3), transparent);
+  margin-top: 0.5rem;
+  min-height: 40px;
+}
+
+.exp__content {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(99, 179, 237, 0.1);
+  border-radius: 14px;
+  padding: 1.75rem;
+  flex: 1;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.exp__content:hover {
+  border-color: rgba(99, 179, 237, 0.28);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
+.exp__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.exp__role {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-bottom: 0.25rem;
+}
+
+.exp__company {
+  font-size: 0.9rem;
+  color: #63b3ed;
+  font-weight: 600;
+}
+
+.exp__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.exp__duration,
+.exp__location {
+  font-size: 0.8rem;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.exp__description {
+  color: #94a3b8;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.exp__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.exp__skill-tag {
+  background: rgba(99, 179, 237, 0.08);
+  border: 1px solid rgba(99, 179, 237, 0.2);
+  color: #7ec8e3;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.25rem 0.7rem;
+  border-radius: 100px;
+}
+
+@media (max-width: 620px) {
+  .exp__header {
+    flex-direction: column;
+  }
+  .exp__meta {
+    align-items: flex-start;
+    text-align: left;
+  }
+}

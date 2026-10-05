@@ -1,0 +1,113 @@
+/* ============ EDUCATION ============ */
+.education {
+  background: rgba(5, 10, 20, 0.4);
+}
+
+.education__list {
+  max-width: 840px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.edu__card {
+  display: flex;
+  gap: 1.5rem;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(99, 179, 237, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.edu__card:hover {
+  border-color: rgba(99, 179, 237, 0.28);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
+.edu__left {
+  flex-shrink: 0;
+}
+
+.edu__icon {
+  font-size: 2rem;
+  background: rgba(99, 179, 237, 0.08);
+  border: 1px solid rgba(99, 179, 237, 0.15);
+  border-radius: 12px;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu__content {
+  flex: 1;
+}
+
+.edu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.edu__degree {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-bottom: 0.3rem;
+}
+
+.edu__institution {
+  font-size: 0.95rem;
+  color: #63b3ed;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.edu__university {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.edu__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.35rem;
+  text-align: right;
+}
+
+.edu__duration,
+.edu__location {
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
+.edu__cgpa {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #68d391;
+  background: rgba(72, 187, 120, 0.1);
+  border: 1px solid rgba(72, 187, 120, 0.2);
+  padding: 0.2rem 0.65rem;
+  border-radius: 100px;
+}
+
+@media (max-width: 620px) {
+  .edu__header {
+    flex-direction: column;
+  }
+  .edu__meta {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .edu__card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,74 @@
+/* ============ RESUME ============ */
+.resume__card {
+  max-width: 840px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(99, 179, 237, 0.05) 0%, rgba(183, 148, 244, 0.05) 100%);
+  border: 1px solid rgba(99, 179, 237, 0.2);
+  border-radius: 18px;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.resume__left {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex: 1;
+}
+
+.resume__icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.resume__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-bottom: 0.4rem;
+}
+
+.resume__subtitle {
+  color: #94a3b8;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.resume__note {
+  font-size: 0.8rem;
+  color: #4a5568;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+.resume__note code {
+  color: #63b3ed;
+}
+
+.resume__btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem !important;
+  padding: 0.85rem 2rem !important;
+}
+
+@media (max-width: 620px) {
+  .resume__card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .resume__btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
